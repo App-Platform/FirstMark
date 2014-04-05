@@ -30,7 +30,6 @@
 <!-- Add PhoneGap -->
 <script type="text/javascript" src="phonegap.js"></script>
 
-
 </head> 
 
 <body>
@@ -96,7 +95,7 @@
         
         <label for="Message"><span class="smallText">Message (optional)</span></label>
         <textarea name="Message" id="Message" style="background:#ffffff;" data-mini="true"></textarea>
-
+        
         <div data-role="controlgroup" data-type="horizontal" style="margin-left:-10px;">
         <input type="submit" id="post_submit" name="submit" value="Submit" class="submit-value" data-inline="true" data-mini="true" data-theme="a" data-icon="check" />
         <a href="#help" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop" data-mini="true" data-theme="a" data-icon="alert">Help</a>
@@ -175,20 +174,20 @@
         <tr>
           <td>American Modern</td>
           <td><a href="tel:8003752075" data-role="button" data-mini="true" data-icon="phone">800-375-2075</a></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Claim Page</a--></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Make a Payment</a--></td>
+          <td><!--a href="" rel="external" data-role="button" data-mini="true" data-icon="info" target="_blank">Claim Page</a--></td>
+          <td><!--a href="" rel="external" data-role="button" data-mini="true" data-icon="info" target="_blank">Make a Payment</a--></td>
         </tr>
         <tr>
           <td>American Strategic (ASI)</td>
           <td><a href="tel:8662745677" data-role="button" data-mini="true" data-icon="phone">866-ASI-LOSS</a></td>
           <td><a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('http://www.americanstrategic.com/claims_center/report_claim.aspx', '_system', 'location=yes');">Claim Page</a></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Make a Payment</a--></td>
+          <td><!--a href="" rel="external" data-role="button" data-mini="true" data-icon="info" target="_blank">Make a Payment</a--></td>
         </tr>
         <tr>
           <td>Chubb</td>
           <td><a href="tel:8002524670" data-role="button" data-mini="true" data-icon="phone">800-CLAIMS-0</a></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Claim Page</a--></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Make a Payment</a--></td>
+          <td><a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Claim Page</a></td>
+          <td><!--a href="" rel="external" data-role="button" data-mini="true" data-icon="info" target="_blank">Make a Payment</a--></td>
         </tr>
         <tr>
           <td>Kemper Specialty</td>
@@ -200,7 +199,7 @@
           <td>MetLife</td>
           <td><a href="tel:8008546011" data-role="button" data-mini="true" data-icon="phone">800-854-6011</a></td>
           <td><a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('https://www.metlife.com/individual/insurance/auto-insurance/claim_center.html?WT.ac=PRO_PRO_AH_Accident_5-12723_T4351-IN-auto-insurance&oc_id=PRO_PRO_AH_Accident_5-12723_T4351-IN-auto-insurance#basics', '_system', 'location=yes');">Claim Page</a></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('', '_system', 'location=yes');">Make a Payment</a--></td>
+          <td><!--a href="" rel="external" data-role="button" data-mini="true" data-icon="info" target="_blank">Make a Payment</a--></td>
         </tr>
         <tr>
           <td>Progressive</td>
@@ -229,8 +228,8 @@
         <tr>
           <td>Travelers</td>
           <td><a href="tel:8002524633" data-role="button" data-mini="true" data-icon="phone">800-252-4633</a></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('http://mytravelers.com/', '_system', 'location=yes');">Claim Page</a--></td>
-          <td><!--a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('http://mytravelers.com/', '_system', 'location=yes');">Make a Payment</a--></td>
+          <td><a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('http://mytravelers.com/', '_system', 'location=yes');">Claim Page</a></td>
+          <td><a data-role="button" data-mini="true" data-icon="info" target="_blank" onClick="window.open('http://mytravelers.com/', '_system', 'location=yes');">Make a Payment</a></td>
         </tr>
         
       </tbody>
@@ -266,7 +265,6 @@
 <div data-role="page" data-theme="a" id="AndrewCowan"> 
   <div data-role="header" data-theme="a" class="center">
     <img src="img/logo.png" alt="logo">
-    <a href="#help" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="alert" class="ui-btn-right">Help</a>
     <div data-role="navbar" style="border-top: 1px solid #184f9e;">
       <ul>
         <li><a href="#home" data-icon="home">Home</a></li>
@@ -300,6 +298,7 @@
 <div class="container_12">
     <div class="grid_6 ui-block960-b">
         <div class="center"><br /><img src="img/Andrew.png" alt="Andrew Cowan" class="shadow img"></div>
+        <div class="center"><br /><a id="body" href="#help" data-rel="popup" data-position-to="window" data-transition="pop">How does this work?</a><br /></div>
     </div>
 
     <div class="grid_6 ui-block960-a">
@@ -357,7 +356,6 @@
 <div data-role="page" data-theme="a" id="AmandaShea"> 
   <div data-role="header" data-theme="a" class="center">
     <img src="img/logo.png" alt="logo">
-    <a href="#help" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="alert" class="ui-btn-right">Help</a>
     <div data-role="navbar" style="border-top: 1px solid #184f9e;">
       <ul>
         <li><a href="#home" data-icon="home">Home</a></li>
@@ -391,6 +389,7 @@
 <div class="container_12">
     <div class="grid_6 ui-block960-b">
         <div class="center"><br /><img src="img/Amanda.png" alt="Amanda Shea" class="shadow img"></div>
+        <div class="center"><br /><a id="body" href="#help" data-rel="popup" data-position-to="window" data-transition="pop">How does this work?</a><br /></div>
     </div>
 
     <div class="grid_6 ui-block960-a">
@@ -448,7 +447,6 @@
 <div data-role="page" data-theme="a" id="DanFortune"> 
   <div data-role="header" data-theme="a" class="center">
     <img src="img/logo.png" alt="logo">
-    <a href="#help" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="alert" class="ui-btn-right">Help</a>
     <div data-role="navbar" style="border-top: 1px solid #184f9e;">
       <ul>
         <li><a href="#home" data-icon="home">Home</a></li>
@@ -482,6 +480,7 @@
 <div class="container_12">
     <div class="grid_6 ui-block960-b">
         <div class="center"><br /><img src="img/Dan.png" alt="Dan Fortune" class="shadow img"></div>
+        <div class="center"><br /><a id="body" href="#help" data-rel="popup" data-position-to="window" data-transition="pop">How does this work?</a><br /></div>
     </div>
 
     <div class="grid_6 ui-block960-a">
@@ -539,7 +538,6 @@
 <div data-role="page" data-theme="a" id="DavidPehrson"> 
   <div data-role="header" data-theme="a" class="center">
     <img src="img/logo.png" alt="logo">
-    <a href="#help" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="alert" class="ui-btn-right">Help</a>
     <div data-role="navbar" style="border-top: 1px solid #184f9e;">
       <ul>
         <li><a href="#home" data-icon="home">Home</a></li>
@@ -573,6 +571,7 @@
 <div class="container_12">
     <div class="grid_6 ui-block960-b">
         <div class="center"><br /><img src="img/David.png" alt="David Pehrson" class="shadow img"></div>
+        <div class="center"><br /><a id="body" href="#help" data-rel="popup" data-position-to="window" data-transition="pop">How does this work?</a><br /></div>
     </div>
 
     <div class="grid_6 ui-block960-a">
